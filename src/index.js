@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+import '../node_modules/semantic-ui-css/semantic.min.css'
+
+// 1) install  npm install semantic-ui-react semantic-ui-css
+// 2) Remove ';' adicional from file ../node_modules/semantic-ui-css/semantic.min.css 'data:application/x-font-ttf;charset=utf-8;;' 
+// https://github.com/Semantic-Org/Semantic-UI-React/issues/4227
+// 3) Reiniciar el webpack: npm install y despues npm install rollup
+
+ReactDOM.render(<App />,
   document.getElementById('root')
 );
 
